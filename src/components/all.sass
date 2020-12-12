@@ -122,9 +122,18 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
-
+/* include bulma */
 @import "~bulma"
 
+/* filoz overrides */
+.navbar
+  background-color: #0f1113;
+  min-height: 4.25rem;
+  .navbar-item
+    img
+      max-height: 2.75rem;
+  .navbar-item.is-active
+    color: #3273dc;
 
 // responsiveness
 +tablet-only
