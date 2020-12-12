@@ -1,15 +1,26 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import logo from '../img/filoz-logo.png'
+import classNames from 'classnames'
 
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
+    console.log('constructor...')
     this.state = {
       active: false,
-      navBarActiveClass: '',
+      navBarActiveClass: ''
     }
+  }
+
+  componentWillUnmount() {
+    console.log('componentWillUnmount...')
+  }  
+
+  setActiveMenuItem = (item) => {
+    console.log('setActiveMenuItem ' + item)
+    this.setState({activeMenuItem: item});
   }
 
   toggleHamburger = () => {
@@ -33,6 +44,16 @@ const Navbar = class extends React.Component {
   }
 
   render() {
+    var getNavbarItemClass = (navbarItem) => {
+      var activeMenuItem = this.state.activeMenuItem;
+      var navBarItemClass = classNames({
+        'navbar-item': true,
+        'is-active': navbarItem === activeMenuItem
+      })
+      console.log(`getNavbarItemClass ${navbarItem}: ${navBarItemClass}`)
+      return navBarItemClass
+    }
+
     return (
       <nav
         className="navbar is-transparent"
@@ -42,7 +63,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img src={logo} alt="Filoz" style={{width:100}} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -60,20 +81,45 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
+              <Link
+                className={getNavbarItemClass('Home')}
+                onClick={() => {
+                  this.setActiveMenuItem('Home')
+                  this.toggleHamburger()
+                  }}  to="/">
+                Home
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+              <Link
+                className={getNavbarItemClass('Racing')}
+                onClick={() => {
+                  this.setActiveMenuItem('Racing')
+                  this.toggleHamburger()
+                  }} to="/about">
+                Racing
               </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
+              <Link
+                className={getNavbarItemClass('Results')}
+                onClick={() => {
+                  this.setActiveMenuItem('Results')
+                  this.toggleHamburger()
+                  }} to="/contact">
+                Results
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link
+                className={getNavbarItemClass('Membership')}
+                onClick={() => {
+                  this.setActiveMenuItem('Membership')
+                  this.toggleHamburger()
+                  }} to="/contact/examples">
+                Membership
+              </Link>
+              <Link
+                className={getNavbarItemClass('Contact')}
+                onClick={() => {
+                  this.setActiveMenuItem('Contact')
+                  this.toggleHamburger()
+                  }} to="/contact">
                 Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
