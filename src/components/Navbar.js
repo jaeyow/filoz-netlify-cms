@@ -10,7 +10,8 @@ const Navbar = class extends React.Component {
     console.log('constructor...')
     this.state = {
       active: false,
-      navBarActiveClass: ''
+      navBarActiveClass: '',
+      activeMenuItem: 'Home'
     }
   }
 
