@@ -91,6 +91,14 @@ const Navbar = class extends React.Component {
                 Home
               </Link>
               <Link
+                className={getNavbarItemClass('News')}
+                onClick={() => {
+                  this.setActiveMenuItem('News')
+                  this.toggleHamburger()
+                  }} to="/news">
+                News
+              </Link>
+              <Link
                 className={getNavbarItemClass('Racing')}
                 onClick={() => {
                   this.setActiveMenuItem('Racing')
