@@ -10,6 +10,9 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
+// FilOz colours
+$filoz-gray: #343a40
+
 .navbar .navbar-menu
   box-shadow:none !important
 
@@ -127,16 +130,18 @@ $menu-label-color: $white-ter
 
 /* filoz overrides */
 .navbar
-  background-color: #0f1113;
+  background-color: $filoz-gray;
   min-height: 4.25rem;
   .navbar-item
     img
       max-height: 2.75rem;
   .navbar-item.is-active
     color: #3273dc;
-    background-color: #0f1113;
+    background-color: $filoz-gray;
+  .navbar-item,.navbar-burger
+    color: #9c9494
   .navbar-menu
-    background-color: #0f1113;
+    background-color: $filoz-gray;
 
 // responsiveness
 +tablet-only
