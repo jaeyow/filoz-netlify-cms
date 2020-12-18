@@ -10,7 +10,7 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
+      <footer className="footer filoz-background-black has-text-white-ter">
         <div className="content has-text-centered">
           <img
             src={logo}
@@ -18,8 +18,8 @@ const Footer = class extends React.Component {
             style={{ width: '14em'}}
           />
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
+        <div className="content has-text-centered filoz-background-black has-text-white-ter">
+          <div className="container filoz-background-black has-text-white-ter">
             <div style={{ maxWidth: '100vw' }} className="columns">
               <div className="column is-4">
                 <section className="menu">
@@ -31,17 +31,17 @@ const Footer = class extends React.Component {
                     </li>
                     <li>
                       <Link className="navbar-item" to="/about">
-                        About
+                        News
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/products">
-                        Products
+                        Racing
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
+                        Results
                       </Link>
                     </li>
                     <li>
