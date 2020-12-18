@@ -20,7 +20,8 @@ export const IndexPageTemplate = ({
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
+        }),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))`,
+        backgroundBlendMode: 'overlay',
         backgroundPosition: `top left`,
         // backgroundAttachment: `fixed`,
       }}
