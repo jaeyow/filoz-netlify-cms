@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
+import Layout from '../components/Layout'
 
 export const BlogPostTemplate = ({
   content,
@@ -57,7 +58,7 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <div>
+    <Layout>
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -74,7 +75,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
-    </div>
+    </Layout>
   )
 }
 
