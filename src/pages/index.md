@@ -3,7 +3,9 @@ templateKey: index-page
 title: FILOZ TRIATHLON CLUB
 image: /img/header-bg-triathlon.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: To promote a healthy lifestyle. To be a role model to the rest of
+  the community. To inspire and help others into healthy living. To advance the
+  sport of Triathlon.
 mainpitch:
   title: Why Filoz
   description: >
