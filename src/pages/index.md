@@ -6,6 +6,8 @@ heading: Great coffee with a conscience
 subheading: To promote a healthy lifestyle. To be a role model to the rest of
   the community. To inspire and help others into healthy living. To advance the
   sport of Triathlon.
+subheading2: To Swim, Bike, Run.
+subheading3: FilOz Triathlon Club is an affiliated member of Triathlon Australia and Triathlon NSW.
 mainpitch:
   title: Why Filoz
   description: >
