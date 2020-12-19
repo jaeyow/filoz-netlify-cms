@@ -1,5 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
+import Layout from '../../components/Layout'
 
 function encode(data) {
   return Object.keys(data)
@@ -34,7 +35,7 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <section className="section">
           <div className="container">
             <div className="content">
@@ -108,7 +109,7 @@ export default class Index extends React.Component {
             </div>
           </div>
         </section>
-      </div>
+      </Layout>
     )
   }
 }
