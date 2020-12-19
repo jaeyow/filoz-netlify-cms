@@ -10,18 +10,8 @@ const Navbar = class extends React.Component {
     console.log('constructor...')
     this.state = {
       active: false,
-      navBarActiveClass: '',
-      activeMenuItem: 'Home'
+      navBarActiveClass: ''
     }
-  }
-
-  componentWillUnmount() {
-    console.log('componentWillUnmount...')
-  }  
-
-  setActiveMenuItem = (item) => {
-    console.log('setActiveMenuItem ' + item)
-    this.setState({activeMenuItem: item});
   }
 
   toggleHamburger = () => {
@@ -84,48 +74,48 @@ const Navbar = class extends React.Component {
             <div className="navbar-start has-text-centered">
               <Link
                 className={getNavbarItemClass('Home')}
+                activeClassName="is-active"
                 onClick={() => {
-                  this.setActiveMenuItem('Home')
                   this.toggleHamburger()
                   }}  to="/">
                 Home
               </Link>
               <Link
                 className={getNavbarItemClass('News')}
+                activeClassName="is-active"
                 onClick={() => {
-                  this.setActiveMenuItem('News')
                   this.toggleHamburger()
                   }} to="/news">
                 News
               </Link>
               <Link
                 className={getNavbarItemClass('Racing')}
+                activeClassName="is-active"
                 onClick={() => {
-                  this.setActiveMenuItem('Racing')
                   this.toggleHamburger()
                   }} to="/about">
                 Racing
               </Link>
               <Link
                 className={getNavbarItemClass('Results')}
+                activeClassName="is-active"
                 onClick={() => {
-                  this.setActiveMenuItem('Results')
                   this.toggleHamburger()
                   }} to="/contact">
                 Results
               </Link>
               <Link
                 className={getNavbarItemClass('Membership')}
+                activeClassName="is-active"
                 onClick={() => {
-                  this.setActiveMenuItem('Membership')
                   this.toggleHamburger()
                   }} to="/contact/examples">
                 Membership
               </Link>
               <Link
                 className={getNavbarItemClass('Contact')}
+                activeClassName="is-active"
                 onClick={() => {
-                  this.setActiveMenuItem('Contact')
                   this.toggleHamburger()
                   }} to="/contact">
                 Contact
