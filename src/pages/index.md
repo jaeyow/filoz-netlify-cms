@@ -1,13 +1,11 @@
 ---
 templateKey: index-page
-title: FILOZ TRIATHLON CLUB
+title: FILOZ TRIATHLON CLUBS
 image: /img/header-bg-triathlon.jpg
 heading: Great coffee with a conscience
-subheading: To promote a healthy lifestyle. To be a role model to the rest of
-  the community. To inspire and help others into healthy living. To advance the
-  sport of Triathlon.
-subheading2: To Swim, Bike, Run.
-subheading3: FilOz Triathlon Club is an affiliated member of Triathlon Australia and Triathlon NSW.
+subheading: Test To promote a healthy lifestyle. To be a role model to the rest
+  of the community. To inspire and help others into healthy living. To advance
+  the sport of Triathlon.
 mainpitch:
   title: Why Filoz
   description: >
@@ -15,10 +13,6 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -54,6 +48,13 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+subheading2: To Swim, Bike, Run.
+subheading3: FilOz Triathlon Club is an affiliated member of Triathlon Australia
+  and Triathlon NSW.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 main:
   heading: Great coffee with no compromises
   description: >
